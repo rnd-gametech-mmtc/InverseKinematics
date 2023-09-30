@@ -68,11 +68,11 @@ public class IKManager : MonoBehaviour
         }
     }
 
-    void ResetWeight()
+    void ResetWeight() // Hapus IK nya kalo udah menjauh dari tembok
     {
         leftIK.weight -= 2 * Time.deltaTime;
         rightIK.weight -= 2 * Time.deltaTime;
-    } // Hapus IK nya kalo udah menjauh dari tembok
+    } 
 
     private void OnTriggerEnter(Collider other) // Deteksi collider yang masuk, jadikan variabel tembok
     {
