@@ -9,6 +9,7 @@ public class IKManager : MonoBehaviour
     public TwoBoneIKConstraint leftIK;
     public TwoBoneIKConstraint rightIK;
 
+    public EnumManager.TagObject tagObject;
     Transform target;
     float direction;
 
@@ -77,6 +78,10 @@ public class IKManager : MonoBehaviour
     private void OnTriggerEnter(Collider other) // Deteksi collider yang masuk, jadikan variabel tembok
     {
         target = other.transform;
+        if(other.tag.Equals(tagObject))
+        {
+
+        }
     }
 
     private void OnTriggerExit(Collider other) // Deteksi collider yang keluar, hapus variabel tembok
