@@ -3,7 +3,6 @@ DISCLAIMER  !!!
 
 Script ini belum optimal dan masih dalam pengembangan
 
-
 Tidak untuk diujicobakan pada game yang sedang dalam pengerjaan
 
 
